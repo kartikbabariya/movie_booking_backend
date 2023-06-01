@@ -5,6 +5,11 @@ const movieSchema = new mongoose.Schema(
     {
         movieName : String,
         movieImage : String,
+        //  screenId: {
+        //     type: mongoose.Schema.Types.ObjectId,
+        //     ref: "Screen",
+        //     default: null,
+        // }
     },
     {
         timestamps : true,

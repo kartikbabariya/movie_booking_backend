@@ -27,7 +27,9 @@ upload.single("movieImage"), movieController.movieUpdate);
 
 //update movie
 route.delete("/:movieId", 
+// checkAccessKey(), 
 movieController.destroy);
 
+route.post("/movieWiseScreen/:movieId", movieController.movieWiseScreen)
 
 module.exports = route
